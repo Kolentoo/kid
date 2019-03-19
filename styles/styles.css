@@ -1,0 +1,29 @@
+.more-btn {width: 130px;height: 40px;text-align: center;font-size: 12px;background: #9c1d22;margin-top: 120px;}
+.more-btn a{color:#fff;line-height: 40px;display: block;}
+.more-btn img{margin-left: 15px;position: relative;top: 2px;}
+
+
+/* 全局底部 */
+.bottom {background: #303030;padding:30px 40px;}
+.bottom .other-info a{color:#fff;font-size: 14px;}
+.bottom .other-info span {color:#fff;margin:0 14px;}
+.bottom .direction {margin-top: 35px;}
+.bottom .link {color:#fff;font-size: 14px;height: 26px;line-height: 26px;text-align: center;padding:0 20px;
+background: #9c1d22;display: inline-block;}
+.bottom .phone {font-size: 16px;}
+.bottom .bottom-link {margin-right: 20px;}
+.bottom .con2 {margin-top: 95px;}
+.bottom .con2 .s1 {margin-right: 20px;color:#999;}
+.bottom .code-list .p1 {margin-top: 10px;color:#fff;}
+
+/* pc */
+@media screen and (min-width:768px) {
+    .pc {display: block;}
+    .mobile {display: none;}
+}
+
+/* 移动 */
+@media screen and (max-width:767px) {
+    .pc {display: none;}
+    .mobile {display: block;}
+}
