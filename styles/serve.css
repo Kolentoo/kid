@@ -1,0 +1,44 @@
+
+.gary {background: #f7f7f7;}
+/* pc */
+@media screen and (min-width:768px) {
+    .info {background: rgba(0,0,0,0.7);width: 600px;height: 200px;color:#fff;position: absolute;top: 50%;left: 5%;
+    margin: -150px 0 0 0 ;}
+    .info-con {padding:30px;position: relative;}
+    .info-con .decorate {position: absolute;right: 40px;bottom: 30px;}
+    .info .title {font-size: 30px;line-height: 40px;margin-bottom: 25px;}
+    .info .article {font-size: 18px;margin-bottom: 35px;}
+    .info .article .arrow {margin-right: 5px;display: inline-block;}
+    .info .edit {position: relative;top: 3px;margin-right: 10px;display: inline-block;}
+    .info .btn {width: 120px;height: 40px;background: #9c1d22;line-height: 40px;font-size: 14px;text-align: center;color:#fff;}
+
+    .serve .section2 .title {font-size: 24px;color:#9c1d22;background: #f4f4f4;padding:90px 0;}
+    .serve .cont-box {height: 580px;}
+    .serve .information {width: 42%;float: left;}
+    .serve .information .infor-con {padding-left: 100px;}
+    .serve .cont-box .topic {width: 180px;height: 50px;line-height: 50px;background: #9c1d22;margin-top: 60px;}
+    .serve .cont-box .topic .p1 {font-size: 18px;color:#fff;margin-left: 20px;}
+    .serve .cont-box .tips {font-size: 18px;color:#9c1d22;margin-top: 20px;}
+    .serve .point-group {margin-top: 45px;}
+    .serve .point-list {float: left;width: 30%;margin-bottom: 10px;}
+    .serve .point-list img{margin-right: 5px;}
+    .serve .company-group {margin-top: 80px;}
+    .serve .company-list {margin-bottom: 20px;}
+    .serve .company-list .logo-box {width: 145px;display: inline-block;}
+    .serve .company-list .name {display: inline-block;margin-left: 20px;}
+    .serve .show {width: 58%;float: right;height: 580px;overflow: hidden;}
+
+}
+
+/* 移动 */
+@media screen and (max-width:767px) {
+    .info {background:rgba(156,29,34,0.5);width: 100%;color:#fff;}
+    .info-con {padding:10px;position: relative;}
+    .info .title {font-size: 16px;line-height: 24px;margin-bottom: 5px;}
+    .info .article {font-size: 12px;margin-bottom: 5px;}
+    .info .article .arrow {margin-right: 5px;}
+    .info .edit {position: relative;top: 3px;margin-right: 10px;}
+    .info .btn {width: 80px;height: 30px;background: #9c1d22;line-height: 30px;font-size: 14px;text-align: center;color:#fff;
+    margin-top:10px;}
+    
+}
