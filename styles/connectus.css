@@ -1,0 +1,42 @@
+/* pc */
+@media screen and (min-width:768px) {
+    .connectus .section2 {padding:60px 0 150px 0;}
+    .connectus .section2 .pic {width: 393px;margin:0 auto;}
+    .connectus .phone-box {width: 730px;height: 130px;background: #9c1d22;color:#fff;margin:0 auto;}
+    .connectus .phone-box .p1 {font-size: 20px;margin-bottom: 20px;padding-top: 20px;}
+    .connectus .phone-box a{color:#fff;font-size: 48px;}
+    .connectus .map-title {background: #e6e6e6;padding:30px 0;}
+    .connectus .map-title .p1 {font-size: 24px;padding-top: 20px;}
+    .connectus .map-title .p2 {font-size: 14px;margin-top: 10px;}
+
+    .connectus .section4 {padding:35px 0;}
+    .connectus .section4 .code-group {width: 530px;margin:0 auto;}
+    .connectus .section4 .code-list {width: 40%;}
+    .connectus .section4 .code1 {float: left;}
+    .connectus .section4 .code2 {float: right;}
+    .connectus .section4 .code-pic {display: inline-block;}
+    .connectus .section4 .code-name {display: inline-block;font-size: 14px;margin-left: 5px;vertical-align: bottom;}
+
+    .connectus .section5 {background: #f7f7f7;}
+    .allmap {width: 100%;height: 550px;}
+
+}
+
+/* 移动 */
+@media screen and (max-width:767px) {
+    .connectus .section2 {padding:30px 0 60px 0;}
+    .connectus .section2 .pic {width: 200px;margin:0 auto;}
+    .connectus .phone-box {width: 300px;height: 60px;background: #9c1d22;color:#fff;margin:0 auto;}
+    .connectus .phone-box .p1 {font-size: 12px;margin-bottom:5px;padding-top: 15px;}
+    .connectus .phone-box a{color:#fff;font-size: 18px;}
+    .connectus .map-title {background: #e6e6e6;padding:30px 0;}
+    .connectus .map-title .p1 {font-size: 20px;padding-top: 5px;}
+    .connectus .map-title .p2 {font-size: 12px;margin-top: 5px;}
+
+    .connectus .section4 {padding:30px 0;}
+    .connectus .section4 .code-group {width: 80%;margin:0 auto;display: flex;justify-content: center;}
+    .connectus .section4 .code-list {width: 40%;text-align: center;}
+    .connectus .section4 .code-list .code-name {margin-top: 7px;}
+    .allmap {width: 100%;height: 300px;}
+    
+}

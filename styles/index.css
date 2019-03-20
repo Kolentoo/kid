@@ -4,8 +4,6 @@
 .menu-box a{font-size: 14px;color:#9c1d22;margin-right: 35px;height: 25px;line-height: 26px;}
 .menu-box .change-language {width: 26px;height: 25px;color:#fff;font-size: 12px;text-align: center;line-height: 26px;background: #9c1d22;
 display: inline-block;}
-.banner {background: url('../images/index/banner.jpg') no-repeat center center;
-position: relative;}
 .down-btn {width: 55px;height: 50px;text-align: center;background: #9c1d22;position: absolute;bottom: 0;left: 50%;margin-left: -25px;}
 .down-btn .icon-down {margin-top: 13px;}
 
@@ -53,22 +51,16 @@ width: 80px;margin:0 10px;text-align: center;}
 
 /* pc */
 @media screen and (min-width:768px) {
-    .banner {height: 1056px;}
+    .banner {position: relative;}
     .info {background: rgba(0,0,0,0.7);width: 615px;height: 290px;color:#fff;position: absolute;top: 50%;left: 50%;
     margin: -160px 0 0 20px;}
     .info-con {padding:30px;position: relative;}
     .info-con .decorate {position: absolute;right: 40px;bottom: 30px;}
     .info .title {font-size: 30px;line-height: 40px;margin-bottom: 25px;}
     .info .article {font-size: 18px;margin-bottom: 35px;}
-    .info .article .arrow {margin-right: 5px;}
-    .info .edit {position: relative;top: 3px;margin-right: 10px;}
+    .info .article .arrow {margin-right: 5px;display: inline-block;}
+    .info .edit {position: relative;top: 3px;margin-right: 10px;display: inline-block;}
     .info .btn {width: 120px;height: 40px;background: #9c1d22;line-height: 40px;font-size: 14px;text-align: center;color:#fff;}
-
-    .menu-con {width: 1200px;margin:60px auto;background: #fff;}
-    .menu-list {width: 200px;text-align: center;margin:0 50px;}
-    .menu-list img{margin-bottom: 8px;}
-    .menu-list .p1 {font-size: 18px;color:#141414;margin-bottom: 5px;}
-    .menu-list .p2 {color:#727272;font-size: 12px;}
 
     .swiper1 .swiper-info {position: absolute;width: 430px;height: 200px;background: rgba(0,0,0,0.7);color:#fff;position: absolute;
     top: 50%;right: 60%;margin-top: -100px;}
@@ -99,18 +91,8 @@ width: 80px;margin:0 10px;text-align: center;}
 
 /* 移动 */
 @media screen and (max-width:767px) {
-    .mobile-nav {height: 55px;background: #9c1d22;}
-    .white-logo {width: 220px;margin:7px 0 0 10px;}
-    .switch {margin:22px 10px 0 0;}
-    .switch img {width: 20px;}
-    .nav-body {background: #fff;position: fixed;top: 55px;right: 0;z-index:1000;width: 100%;padding-bottom: 20px;transition:all ease .5s;
-    transform:translateX(0);}
-    .nav-off {transform:translateX(100%);}
-    .nav-inner {padding:0 20px;}
-    .nav-list {width: 100%;padding: 8px 0px;font-size: 14px;}
-    .next-con {margin-top: 8px;}
-    .next-list {width: 100%;padding: 8px 0 0 0;font-size: 12px;}
-
+    .banner {background: url('../images/index/banner.jpg') no-repeat center center;
+        position: relative;}
     .info {background:rgba(156,29,34,0.5);width: 100%;color:#fff;}
     .info-con {padding:10px;position: relative;}
     .info .title {font-size: 16px;line-height: 24px;margin-bottom: 5px;}
@@ -119,13 +101,6 @@ width: 80px;margin:0 10px;text-align: center;}
     .info .edit {position: relative;top: 3px;margin-right: 10px;}
     .info .btn {width: 80px;height: 30px;background: #9c1d22;line-height: 30px;font-size: 14px;text-align: center;color:#fff;
     margin-top:10px;}
-
-    .menu-con {width: 100%;margin:20px auto;background: #fff;display: flex;justify-content: center;}
-    .menu-list {text-align: center;margin:0 5%;}
-    .menu-list .icon-box {width: 30px;height: 30px;margin:0 auto 5px;}
-    .menu-list .icon-box img{height: 100%;}
-    .menu-list .p1 {font-size: 14px;color:#141414;margin-bottom: 5px;}
-    .menu-list .p2 {color:#727272;font-size: 12px;}
 
     .swiper1 .swiper-info {position: absolute;background: rgba(0,0,0,0.7);color:#fff;position: absolute;
     bottom:0;left:0;width: 100%;}
