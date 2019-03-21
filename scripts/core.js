@@ -15,6 +15,7 @@ $(function(){
 
     initialize();
     lookPic()
+    seePic()
 })
 
 function indexSwiper1(){
@@ -287,7 +288,20 @@ function initialize() {
 function lookPic(){
     $('.mirror').on('click',function(){
         var mySrc = $(this).parents('.chart').find('a').children('img').attr('src')
-        console.log(mySrc)
+
+        var bigUrl = $('.big-pic').attr('src',mySrc)
+        $('.pic-show').removeClass('hide');
+
+        $('.pic-show').on('click',function(){
+            $('.pic-show').addClass('hide');
+        })
+    })
+}
+
+function seePic(){
+    $('.small-pic').on('click',function(){
+        var mySrc = $(this).find('img').attr('src')
+ 
         var bigUrl = $('.big-pic').attr('src',mySrc)
         $('.pic-show').removeClass('hide');
 

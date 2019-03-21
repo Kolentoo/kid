@@ -1,6 +1,7 @@
 .more-btn {width: 130px;height: 40px;text-align: center;font-size: 12px;background: #9c1d22;margin-top: 120px;}
 .more-btn a{color:#fff;line-height: 40px;display: block;}
 .more-btn img{margin-left: 15px;position: relative;top: 2px;}
+.gary {background: #f7f7f7;}
 
 body,html {background: #fff;}
 .option-con {background: #fff;box-shadow: 0 2px 2px 1px rgba(1,1,1,.1);position: absolute;top: 30px;left: 0;width: 140px;}
@@ -52,6 +53,14 @@ body,html {background: #fff;}
     .menu-list img{margin-bottom: 8px;}
     .menu-list .p1 {font-size: 18px;color:#141414;margin-bottom: 5px;}
     .menu-list .p2 {color:#727272;font-size: 12px;}
+
+    /* 遮罩层 */
+    .pic-show {position: fixed;top: 0;left: 0;width: 100%;height: 100%;z-index:1000;text-align: center;}
+    .pic-show .mask {background: rgba(0,0,0,0.5);width: 100%;height: 100%;}
+    .pic-show .pic-inner {text-align: center;width: 800px;margin:0 auto;height: 100%;}
+    .pic-show .pic-inner img{vertical-align: middle;padding-top: 20%;}
+    .pic-show .all-width {width: 100%;}
+    .pic-show .all-width img{padding-top: 10%;}
 }
 
 /* 移动 */
@@ -97,4 +106,9 @@ body,html {background: #fff;}
     .menu-list .icon-box img{height: 100%;}
     .menu-list .p1 {font-size: 12px;color:#141414;margin-bottom: 5px;}
     .menu-list .p2 {color:#727272;font-size: 12px;}
+
+    /* 遮罩层 */
+    .pic-show {position: fixed;top: 0;left: 0;width: 100%;height: 100%;z-index:1000;text-align: center;}
+    .pic-show .mask {background: rgba(0,0,0,0.5);width: 100%;height: 100%;}
+    .pic-show .pic-inner {display: flex;justify-content: center;align-items: center;height: 100%;}
 }
