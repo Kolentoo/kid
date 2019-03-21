@@ -2,6 +2,7 @@ $(function(){
 
     indexSwiper1();
     indexSwiper2();
+    enviromentSwiper3();
 
     allBottom();
     controlBread();
@@ -13,7 +14,7 @@ $(function(){
     allIcon();
 
     initialize();
-
+    lookPic()
 })
 
 function indexSwiper1(){
@@ -44,6 +45,22 @@ function indexSwiper2(){
             nextButton: '.swiper-button-next2',
             prevButton: '.swiper-button-prev2',
             paginationType: 'fraction'
+            
+        })  
+    }
+}
+
+function enviromentSwiper3(){
+    if($('.swiper3').get(0)){
+        var mySwiper = new Swiper ('.swiper3', {
+            loop: true,
+            
+            // 如果需要分页器
+            pagination: '.swiper-pagination3',
+            
+            // 如果需要前进后退按钮
+            nextButton: '.swiper-button-next3',
+            prevButton: '.swiper-button-prev3',
             
         })  
     }
@@ -248,6 +265,7 @@ function allIcon(){
     }
 }
 
+// 地图
 function initialize() {
     if($('.allmap').get(0)){
         var map = new AMap.Map('container', {
@@ -264,4 +282,17 @@ function initialize() {
         // // 将创建的点标记添加到已有的地图实例：
         // map.add(marker);
     }
+}
+
+function lookPic(){
+    $('.mirror').on('click',function(){
+        var mySrc = $(this).parents('.chart').find('a').children('img').attr('src')
+        console.log(mySrc)
+        var bigUrl = $('.big-pic').attr('src',mySrc)
+        $('.pic-show').removeClass('hide');
+
+        $('.pic-show').on('click',function(){
+            $('.pic-show').addClass('hide');
+        })
+    })
 }
