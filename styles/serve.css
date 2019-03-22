@@ -2,6 +2,7 @@
 .gary {background: #f7f7f7;}
 .serve .point-list {float: left;width: 30%;margin-bottom: 10px;}
 .serve .point-list img{margin-right: 5px;}
+.point-list .vm {display: inline-block;}
 /* pc */
 @media screen and (min-width:768px) {
     .banner {position: relative;}
@@ -41,6 +42,51 @@
     .serve .serve-info .info-con {width: 560px;}
 }
 
+@media screen and (max-width:1600px) {
+    .serve .information .infor-con {padding-left: 0;margin-left: 50px;}
+    .serve .point-list {overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+    .serve-show {width: 45%;}
+    .serve-info {width: 50%;margin-right: 5%;}
+
+    .serve .cont-box .topic {margin-top: 20px;}
+    .serve .cont-box .topic {height: 40px;line-height: 40px;}
+    .serve .point-group {margin-top: 20px;}
+    .serve .company-group {margin-top: 30px;}
+    .serve .cont-box {height: 485px;}
+    .serve .show {overflow: hidden;height: 485px;}
+}
+
+@media screen and (max-width:1400px) {
+    .nav-wrap .nav-inner {padding:0 20px;width: auto;}
+    .info {top: 50%;width: auto;height: auto;}
+    .info .title {font-size: 20px;margin-bottom: 10px;}
+
+    .serve .serve-title {margin: 50px 0 30px 0;}
+    .serve-show {height: 480px;overflow: hidden;}
+    .serve .section3 .cont-box {height: 480px;}
+
+}
+
+
+
+@media screen and (max-width:1360px) {
+
+}
+
+@media screen and (max-width:1200px) {
+
+
+}
+
+@media screen and (max-width:950px) {
+    .info {top: 50%;width: auto;height: auto;}
+    .info .title {font-size: 20px;margin-bottom: 10px;}
+    .logo-pic {display: none;}
+
+
+}
+
 /* 移动 */
 @media screen and (max-width:767px) {
     .info {background:rgba(156,29,34,0.5);width: 100%;color:#fff;}
@@ -73,5 +119,11 @@
     .serve .apply-btn {width: 130px;height: 40px;background: #9c1d22;font-size: 12px;line-height: 42px;
     color:#fff;margin:20px auto 0;}
     .serve .apply-btn img{margin-left: 10px;}
+
+    .serve .information .infor-con {margin-left: 0;}
+    .serve .show {overflow: visible;height: auto;}
+    .serve .cont-box {height: auto;}
+    .serve-info {width: auto;}
+    .serve-show {height: auto;width: auto;}
     
 }

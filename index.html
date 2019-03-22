@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="./styles/swiper.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/index.css">
+    
     <script src="./scripts/jquery.js"></script>
     <script src="./scripts/swiper.min.js"></script>
+    <script src="./scripts/jquery.lazyload.min.js"></script>
     <script src="./scripts/core.js"></script>
     <title>首页</title>
     <base target="_blank" />
@@ -19,7 +21,7 @@
     
         <div class="nav-box pc">
             <div class="nav-con clearfix">
-                <a class="fl" href=""><img src="../images/index/logo.png" alt=""></a>
+                <a class="fl logo-inner" href=""><img class="lazy vm g10" data-original="../images/logo.png" alt=""></a>
                 <div class="menu-box fr">
                     <a href="">关于我们</a>
                     <a href="">校园环境</a>
@@ -35,232 +37,263 @@
 
         <div class="mobile-top mobile"></div>
         
-        <div class="banner">
-            <img class="g10 vm" src="./images/index/banner.jpg" alt="">
-            <div class="info">
-                <div class="info-con">
-                    <p class="title">
-                        在快乐中 <br>
-                        探索世界文化与科技文明
-                    </p>
-                    <p class="article">
-                        <img class="arrow pc" src="../images/arrow1.png" alt="">武汉关山大道园即将开园
-                    </p>
-                    <div class="btn pointer">
-                        <img class="edit pc" src="../images/icon-edit.png" alt="">学位预定
-                    </div>
-                    <img class="block decorate pc" src="../images/pic1.png" alt="">
-                </div>
-            </div>
-            <div class="down-btn pointer pc">
-                <img class="icon-down vm" src="../images/icon-down.png" alt="">
-            </div>
-        </div>
+        <div class="wrap">
 
-        <div class="menu-group">
-        </div>
-        <div class="section section1">
-            <div class="swiper-container swiper1">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide side1">
-                        <img class="g10" src="./images/index/banner2.jpg" alt="">
-                        <div class="swiper-info">
-                            <div class="info-con">
-                                <div class="txt">
-                                    <p class="p1">特色教室 . 手工教室</p>
-                                    <p class="p2 pc">培养孩子的独立性、观察力，创造性思维。</p>
-                                </div>
-                                <img class="arrow pc" src="./images/arrow1.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide side2">
-                        <img class="g10" src="./images/index/banner2.jpg" alt="">
-                        <div class="swiper-info">
-                            <div class="info-con">
-                                <div class="txt">
-                                    <p class="p1">特色教室 . 手工教室</p>
-                                    <p class="p2 pc">培养孩子的独立性、观察力，创造性思维。</p>
-                                </div>
-                                <img class="arrow pc" src="./images/arrow1.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide side3">
-                        <img class="g10" src="./images/index/banner2.jpg" alt="">
-                        <div class="swiper-info">
-                            <div class="info-con">
-                                <div class="txt">
-                                    <p class="p1">特色教室 . 手工教室</p>
-                                    <p class="p2 pc">培养孩子的独立性、观察力，创造性思维。</p>
-                                </div>
-                                <img class="arrow pc" src="./images/arrow1.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 如果需要分页器 -->
-                <div class="swiper-pagination1 tc"></div>
-                
-                <!-- 如果需要导航按钮 -->
-                <div class="swiper-button-prev1 pc"></div>
-                <div class="swiper-button-next1 pc"></div>
-
-            </div>
-        </div>
-        <div class="section section2">
-            <div class="title">
-                <div class="txt">
-                    <p class="p1">国际级配套设施</p>
-                    <p class="p2">国际化标准配套设施为孩子打造更安全更放心的成长环境</p>
-                </div>
-                <img class="arrow pc" src="./images/arrow2.png" alt="">
-            </div>
-            <div class="cont-box clearfix">
-                <div class="swiper-container swiper2 fl">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img class="pic g10" src="./images/index/banner3.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="pic g10" src="./images/index/banner3.jpg" alt="">
-                        </div>
-                    </div>
-    
-                </div>
-                <div class="cont-info fr">
+            <div class="banner">
+                <img class="g10 vm lazy" data-original="./images/banner.jpg" alt="">
+                <div class="info">
                     <div class="info-con">
-                        <div class="txt">
-                            <p class="p1">材质安全</p>
-                            <p class="p2">纯天然环保材质确保孩子在园的全方位安全保障。</p>
+                        <p class="title">
+                            在快乐中 <br>
+                            探索世界文化与科技文明
+                        </p>
+                        <p class="article">
+                            <img class="arrow lazy pc" data-original="../images/arrow1.png" alt="">武汉关山大道园即将开园
+                        </p>
+                        <div class="btn pointer book">
+                            <img class="edit pc lazy" data-original="../images/icon-edit.png" alt="">学位预定
                         </div>
-                        <div class="logo-group">
-                            <img src="./images/index/logo2.png" alt="">
-                            <img src="./images/index/logo3.png" alt="">
-                            <img src="./images/index/logo4.png" alt="">
+                        <img class="block decorate pc lazy" data-original="../images/pic1.png" alt="">
+                    </div>
+                </div>
+                <div class="down-btn pointer pc">
+                    <img class="icon-down vm lazy" data-original="../images/icon-down.png" alt="">
+                </div>
+            </div>
+
+            <div class="menu-group">
+            </div>
+            <div class="section section1">
+                <div class="swiper-container swiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide side1">
+                            <img class="g10 lazy vm" src="./images/banner2.jpg" alt="">
+                            <div class="swiper-info">
+                                <div class="info-con">
+                                    <div class="txt">
+                                        <p class="p1">特色教室 . 手工教室</p>
+                                        <p class="p2 pc">培养孩子的独立性、观察力，创造性思维。</p>
+                                    </div>
+                                    <img class="arrow pc" src="./images/arrow1.png" alt="">
+                                </div>
+                            </div>
                         </div>
-                        <div class="more-btn">
-                            <a href="">
-                                了解更多
-                                <img src="./images/arrow1.png" alt="">
+                        <div class="swiper-slide side2">
+                            <img class="g10 vm lazy" src="./images/banner2.jpg" alt="">
+                            <div class="swiper-info">
+                                <div class="info-con">
+                                    <div class="txt">
+                                        <p class="p1">特色教室 . 手工教室</p>
+                                        <p class="p2 pc">培养孩子的独立性、观察力，创造性思维。</p>
+                                    </div>
+                                    <img class="arrow pc lazy" src="./images/arrow1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide side3">
+                            <img class="g10 vm lazy" src="./images/banner2.jpg" alt="">
+                            <div class="swiper-info">
+                                <div class="info-con">
+                                    <div class="txt">
+                                        <p class="p1">特色教室 . 手工教室</p>
+                                        <p class="p2 pc">培养孩子的独立性、观察力，创造性思维。</p>
+                                    </div>
+                                    <img class="arrow pc" src="./images/arrow1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <div class="swiper-pagination1 tc"></div>
+                    
+                    <!-- 如果需要导航按钮 -->
+                    <div class="swiper-button-prev1 pc"></div>
+                    <div class="swiper-button-next1 pc"></div>
+
+                </div>
+            </div>
+            <div class="section section2">
+                <div class="title">
+                    <div class="txt">
+                        <p class="p1">国际级配套设施</p>
+                        <p class="p2">国际化标准配套设施为孩子打造更安全更放心的成长环境</p>
+                    </div>
+                    <img class="arrow pc lazy" src="./images/arrow2.png" alt="">
+                </div>
+                <div class="cont-box clearfix">
+                    <div class="swiper-container swiper2 fl">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img class="pic g10 vm lazy" src="./images/banner3.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="pic g10 vm lazy" src="./images/banner3.jpg" alt="">
+                            </div>
+                        </div>
+        
+                    </div>
+                    <div class="cont-info fr">
+                        <div class="info-con">
+                            <div class="txt">
+                                <p class="p1">材质安全</p>
+                                <p class="p2">纯天然环保材质确保孩子在园的全方位安全保障。</p>
+                            </div>
+                            <div class="logo-group">
+                                <img class="vm lazy" data-original="./images/logo2.png" alt="">
+                                <img class="vm lazy" data-original="./images/logo3.png" alt="">
+                                <img class="vm lazy" data-original="./images/logo4.png" alt="">
+                            </div>
+                            <div class="more-btn more-check">
+                                <a href="">
+                                    了解更多
+                                    <img class="vm lazy" src="./images/arrow1.png" alt="">
+                                </a>
+                            </div>
+                            
+                            <div class="control clearfix">
+                                <div class="swiper-button-prev2 fl"></div>
+
+                                <div class="swiper-pagination2 fl"></div>
+                                
+                                <div class="swiper-button-next2 fl"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section3">
+                <p class="title tc">最新动态</p>
+                <div class="cont-box clearfix">
+                    <div class="news-group fl">
+                        <ul class="news-con">
+                            <li class="news-list clearfix">
+                                <img class="arrow fl lazy" src="./images/arrow2.png" alt="">
+                                <a class="fl" href="">武汉关山大道园2019学年学费及优惠政策公布武汉关山大道园2019学年学费及优惠政策公布</a>
+                            </li>
+                            <li class="news-list clearfix">
+                                <img class="arrow fl lazy" src="./images/arrow2.png" alt="">
+                                <a  class="fl" href="">武汉关山大道园2019学年学费及优惠政策公布武汉关山大道园2019学年学费及优惠政策公布</a>
+                            </li>
+                            <li class="news-list clearfix">
+                                <img class="arrow fl lazy" src="./images/arrow2.png" alt="">
+                                <a  class="fl" href="">武汉关山大道园2019学年学费及优惠政策公布武汉关山大道园2019学年学费及优惠政策公布</a>
+                            </li>
+                            <li class="news-list clearfix">
+                                <img class="arrow fl lazy" src="./images/arrow2.png" alt="">
+                                <a  class="fl" href="">武汉关山大道园2019学年学费及优惠政策公布武汉关山大道园2019学年学费及优惠政策公布</a>
+                            </li>
+                            <li class="news-list clearfix">
+                                <img class="arrow fl lazy" src="./images/arrow2.png" alt="">
+                                <a  class="fl" href="">武汉关山大道园2019学年学费及优惠政策公布武汉关山大道园2019学年学费及优惠政策公布</a>
+                            </li>
+                            <li class="news-list clearfix">
+                                <img class="arrow fl lazy" src="./images/arrow2.png" alt="">
+                                <a  class="fl" href="">武汉关山大道园2019学年学费及优惠政策公布武汉关山大道园2019学年学费及优惠政策公布</a>
+                            </li>
+                            <li class="news-list clearfix">
+                                <img class="arrow fl lazy" src="./images/arrow2.png" alt="">
+                                <a  class="fl" href="">武汉关山大道园2019学年学费及优惠政策公布武汉关山大道园2019学年学费及优惠政策公布</a>
+                            </li>
+                            <li class="news-list clearfix">
+                                <img class="arrow fl lazy" src="./images/arrow2.png" alt="">
+                                <a  class="fl" href="">武汉关山大道园2019学年学费及优惠政策公布武汉关山大道园2019学年学费及优惠政策公布</a>
+                            </li>
+                            <li class="news-list clearfix">
+                                <img class="arrow fl lazy" src="./images/arrow2.png" alt="">
+                                <a  class="fl" href="">武汉关山大道园2019学年学费及优惠政策公布武汉关山大道园2019学年学费及优惠政策公布</a>
+                            </li>
+                        </ul>
+                        <div class="more-btn more-news">
+                            <a href="">查看更多通知
+                                <img data-original="./images/arrow1.png" alt="">
                             </a>
                         </div>
-                        
-                        <div class="control clearfix">
-                            <div class="swiper-button-prev2 fl"></div>
-
-                            <div class="swiper-pagination2 fl"></div>
-                            
-                            <div class="swiper-button-next2 fl"></div>
+                    </div>
+                    <div class="news-other fl">
+                        <ul class="other-con clearfix">
+                            <li class="other-list fl">
+                                <div class="chart">
+                                    <a href=""><img class="g10 vm lazy" data-original="./images/pic1.jpg" alt=""></a>
+                                </div>
+                                <div class="detail">
+                                    <div class="detail-con">
+                                        <a class="block name" href="" title="">宣怀国际幼儿园“欢欢喜喜闹元宵”活动精彩回顾宣怀国际幼儿园“欢欢喜喜闹元宵”活动精彩回顾</a>
+                                        <p class="date">2019-2-20</p>
+                                        <p class="desc" title="">
+                                            宣怀国际幼儿园光谷园外教Joel老师带领孩子们进行欢乐的游戏，将英文学习融入到欢快的游戏中，在玩耍的同时让孩子敢于表达、
+                                            乐于用英文表达而不再羞涩。
+                                        </p>
+                                        <img class="arrow" src="./images/arrow2.png" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="other-list fl">
+                                <div class="chart">
+                                    <a href=""><img class="g10 lazy vm" data-original="./images/pic1.jpg" alt=""></a>
+                                </div>
+                                <div class="detail">
+                                    <div class="detail-con">
+                                        <a class="block name" href="" title="">宣怀国际幼儿园“欢欢喜喜闹元宵”活动精彩回顾宣怀国际幼儿园“欢欢喜喜闹元宵”活动精彩回顾</a>
+                                        <p class="date">2019-2-20</p>
+                                        <p class="desc" title="">
+                                            宣怀国际幼儿园光谷园外教Joel老师带领孩子们进行欢乐的游戏，将英文学习融入到欢快的游戏中，在玩耍的同时让孩子敢于表达、
+                                            乐于用英文表达而不再羞涩。
+                                        </p>
+                                        <img class="arrow" src="./images/arrow2.png" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section section4">
+                <img class="banner4 g10 vm lazy" data-original="./images/banner4.jpg" alt="">
+                <div class="info">
+                    <div class="info-con">
+                        <div class="txt">
+                            <p class="p1">FuturoKid课程体系</p>
+                            <p class="p2">宣怀国际科学幼儿园秉承瑞吉欧以儿童为中心的教学观，将儿童置于真实的生活情境中开展主题方案教学的同时，融入了 STEAM教学与英语作为第一语言的学习。</p>
+                        </div>
+                        <div class="more-btn know-more">
+                            <a href="">
+                                了解更多
+                                <img class="lazy" data-original="./images/arrow1.png" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="section section3">
-            <p class="title tc">最新动态</p>
-            <div class="cont-box clearfix">
-                <div class="news-group fl">
-                    <ul class="news-con">
-                        <li class="news-list clearfix">
-                            <img class="arrow fl" src="./images/arrow2.png" alt="">
-                            <a class="fl" href="">武汉关山大道园2019学年学费及优惠政策公布武汉关山大道园2019学年学费及优惠政策公布</a>
+            <div class="section section5 form-box">
+                <p class="book-title">学位预定</p>
+                <div class="form">
+                    <p class="form-title tc">填写以下信息，我们将尽快与您联系</p>
+                    <ul class="clearfix">
+                        <li class="input-list">
+                            <p class="p1">姓名<i>*</i></p>
+                            <input class="input" type="text" placeholder="请输入孩子姓名">
                         </li>
-                        <li class="news-list clearfix">
-                            <img class="arrow fl" src="./images/arrow2.png" alt="">
-                            <a  class="fl" href="">武汉关山大道园2019学年学费及优惠政策公布武汉关山大道园2019学年学费及优惠政策公布</a>
+                        <li class="input-list">
+                            <p class="p1">性别<i>*</i></p>
+                            <label class="sex-list"><input class="sex" type="radio" name="sex" value='male'/>男</label>
+                            <label class="sex-list"><input class="sex" name="sex" checked type="radio" value="female"/>女</label>
                         </li>
-                        <li class="news-list clearfix">
-                            <img class="arrow fl" src="./images/arrow2.png" alt="">
-                            <a  class="fl" href="">武汉关山大道园2019学年学费及优惠政策公布武汉关山大道园2019学年学费及优惠政策公布</a>
+                        <li class="input-list">
+                            <p class="p1">出生年月<i>*</i></p>
+                            <input class="input" type="date" placeholder="请输入日期">
                         </li>
-                        <li class="news-list clearfix">
-                            <img class="arrow fl" src="./images/arrow2.png" alt="">
-                            <a  class="fl" href="">武汉关山大道园2019学年学费及优惠政策公布武汉关山大道园2019学年学费及优惠政策公布</a>
-                        </li>
-                        <li class="news-list clearfix">
-                            <img class="arrow fl" src="./images/arrow2.png" alt="">
-                            <a  class="fl" href="">武汉关山大道园2019学年学费及优惠政策公布武汉关山大道园2019学年学费及优惠政策公布</a>
-                        </li>
-                        <li class="news-list clearfix">
-                            <img class="arrow fl" src="./images/arrow2.png" alt="">
-                            <a  class="fl" href="">武汉关山大道园2019学年学费及优惠政策公布武汉关山大道园2019学年学费及优惠政策公布</a>
-                        </li>
-                        <li class="news-list clearfix">
-                            <img class="arrow fl" src="./images/arrow2.png" alt="">
-                            <a  class="fl" href="">武汉关山大道园2019学年学费及优惠政策公布武汉关山大道园2019学年学费及优惠政策公布</a>
-                        </li>
-                        <li class="news-list clearfix">
-                            <img class="arrow fl" src="./images/arrow2.png" alt="">
-                            <a  class="fl" href="">武汉关山大道园2019学年学费及优惠政策公布武汉关山大道园2019学年学费及优惠政策公布</a>
-                        </li>
-                        <li class="news-list clearfix">
-                            <img class="arrow fl" src="./images/arrow2.png" alt="">
-                            <a  class="fl" href="">武汉关山大道园2019学年学费及优惠政策公布武汉关山大道园2019学年学费及优惠政策公布</a>
+                        <li class="input-list">
+                            <p class="p1">家长联系方式<i>*</i></p>
+                            <input class="input" type="text" placeholder="请输入手机号" maxlength="11">
                         </li>
                     </ul>
-                    <div class="more-btn more-news">
-                        <a href="">查看更多通知
-                            <img src="./images/arrow1.png" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="news-other fl">
-                    <ul class="other-con clearfix">
-                        <li class="other-list fl">
-                            <div class="chart">
-                                <a href=""><img class="g10" src="./images/index/pic1.jpg" alt=""></a>
-                            </div>
-                            <div class="detail">
-                                <div class="detail-con">
-                                    <a class="block name" href="" title="">宣怀国际幼儿园“欢欢喜喜闹元宵”活动精彩回顾宣怀国际幼儿园“欢欢喜喜闹元宵”活动精彩回顾</a>
-                                    <p class="date">2019-2-20</p>
-                                    <p class="desc" title="">
-                                        宣怀国际幼儿园光谷园外教Joel老师带领孩子们进行欢乐的游戏，将英文学习融入到欢快的游戏中，在玩耍的同时让孩子敢于表达、
-                                        乐于用英文表达而不再羞涩。
-                                    </p>
-                                    <img class="arrow" src="./images/arrow2.png" alt="">
-                                </div>
-                            </div>
-                        </li>
-                        <li class="other-list fl">
-                            <div class="chart">
-                                <a href=""><img class="g10" src="./images/index/pic1.jpg" alt=""></a>
-                            </div>
-                            <div class="detail">
-                                <div class="detail-con">
-                                    <a class="block name" href="" title="">宣怀国际幼儿园“欢欢喜喜闹元宵”活动精彩回顾宣怀国际幼儿园“欢欢喜喜闹元宵”活动精彩回顾</a>
-                                    <p class="date">2019-2-20</p>
-                                    <p class="desc" title="">
-                                        宣怀国际幼儿园光谷园外教Joel老师带领孩子们进行欢乐的游戏，将英文学习融入到欢快的游戏中，在玩耍的同时让孩子敢于表达、
-                                        乐于用英文表达而不再羞涩。
-                                    </p>
-                                    <img class="arrow" src="./images/arrow2.png" alt="">
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="section section4">
-            <img class="banner4 g10 vm" src="./images/index/banner4.jpg" alt="">
-            <div class="info">
-                <div class="info-con">
-                    <div class="txt">
-                        <p class="p1">FuturoKid课程体系</p>
-                        <p class="p2">宣怀国际科学幼儿园秉承瑞吉欧以儿童为中心的教学观，将儿童置于真实的生活情境中开展主题方案教学的同时，融入了 STEAM教学与英语作为第一语言的学习。</p>
-                    </div>
-                    <div class="more-btn know-more">
-                        <a href="">
-                            了解更多
-                            <img src="./images/arrow1.png" alt="">
-                        </a>
-                    </div>
+                    <div class="book-btn pointer">提交</div>
                 </div>
             </div>
         </div>
     </div>
+
+
 
     <div class="bottom-box">
 

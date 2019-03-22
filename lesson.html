@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/lesson.css">
     <script src="./scripts/jquery.js"></script>
+    <script src="./scripts/jquery.lazyload.min.js"></script>
     <script src="./scripts/core.js"></script>
     <title>课程体系</title>
     <base target="_blank" />
@@ -18,28 +19,25 @@
         <div class="choose-bread fl">
             <div class="choosed">
                 <div class="choose-con clearfix">
-                    <span class="s1 fl">关于我们</span>
+                    <span class="s1 fl">教学体系</span>
                     <img class="down vm fr" src="./images/icon-down2.png" alt="">
                 </div>
                 <ul class="option-con hide">
-                    <li class="option-list"><a href="">关于我们</a></li>
-                    <li class="option-list"><a href="">合作伙伴</a></li>
-                    <li class="option-list"><a href="">集团介绍</a></li>
-                    <li class="option-list"><a href="">加入我们</a></li>
-                    <li class="option-list"><a href="">教研团队</a></li>
+                    <li class="option-list"><a href="">FuturoKid课程体系</a></li>
+                    <li class="option-list"><a href="">特色课程</a></li>
                 </ul>
             </div>
         </div>
         <div class="choose-result fl">
-            <p class="p1">集团介绍</p>
+            <p class="p1">FuturoKid课程体系教学体系</p>
         </div>
     </div>
     <div class="mobile-top mobile"></div>
 
-    <div class="lesson">
+    <div class="lesson wrap">
         <div class="section section1">
             <div class="banner">
-                <img class="g10 vm" src="./images/banner15.jpg" alt="">
+                <img class="g10 vm lazy" data-original="./images/banner15.jpg" alt="">
             </div>
         </div>
 
@@ -47,7 +45,9 @@
             <div class="cont-box">
                 <p class="p1 tc">受瑞吉欧教育启发的宣怀幼儿教育</p>
                 <div class="txt clearfix">
-                    <img class="vm lesson-pic1" src="./images/lesson1.png" alt="">
+                    <div class="pic-box lesson-pic1">
+                    <img class="vm  lazy g10" data-original="./images/lesson1.png" alt="">
+                    </div>
                     <div class="contxt">
                         我们将⼉童放在教育的中心地位。<br>
                         我们有意识地给儿童提供赋予教学意义的环境，将环境视为儿童学习和成⻓的第三位老师。<br>
@@ -69,7 +69,7 @@
                     <p class="p3">幼儿的发展是一个整体，每个领域之间相互渗透、彼此连接，需要我们从不同的角度去促进儿童在情感、能力、审美、体能、认知、表达等多领域全方位共同发展。</p>
                 </div>
                 <div class="example">
-                    <img class="example-pic vm g10" src="./images/lesson2.png" alt="">
+                    <img class="example-pic vm g10 lazy" data-original="./images/lesson2.png" alt="">
                 </div>
             </div>
         </div>  
@@ -83,7 +83,7 @@
                 </p>
             </div>
             <div class="pic-box">
-                <img class="vm g10" src="./images/lesson3.jpg" alt="">
+                <img class="vm g10 lazy" data-original="./images/lesson3.jpg" alt="">
             </div>
         </div>
 
@@ -96,13 +96,13 @@
                 </p>
             </div>
             <div class="pic-box small-pic pointer">
-                <img class="vm g10" src="./images/lesson4.jpg" alt="">
+                <img class="vm g10 lazy" data-original="./images/lesson4.jpg" alt="">
             </div>
         </div>
 
         <div class="section section5">
             <div class="banner">
-                <img class="g10 vm" src="./images/banner16.jpg" alt="">
+                <img class="g10 vm lazy" data-original="./images/banner16.jpg" alt="">
                 <div class="info">
                     <div class="info-con">
                         <p class="title">

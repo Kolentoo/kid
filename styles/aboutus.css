@@ -80,6 +80,38 @@
     
 }
 
+@media screen and (max-width:1400px) {
+    .section3 .other-con {width: 100%;}
+    .nav-wrap .nav-inner {padding:0 20px;width: auto;}
+    .info {top: 50%;width: auto;height: auto;}
+    .info .title {font-size: 20px;margin-bottom: 10px;}
+}
+
+@media screen and (max-width:1200px) {
+    .cooperate .company {width: 90%;}
+    .cooperate .company-logo {width: 30%;}
+    .cooperate .company-info {width: 70%;}
+
+    .cooperate .company {width: 90%;}
+    .intro .small-logo {width: 30%;}
+    .intro .company-con {width: 70%;}
+    .intro .section3 .map {width: 90%;}
+
+    .joinus .section2 .company-job {width: 90%;}
+    .joinus .section2 .place {width: 25%;}
+    .joinus .job-box {width: 72%;margin-left: 3%;}
+
+    .team .company-logo {width: 30%;margin: 0 auto;}
+    .team .company-info {width: 70%;margin: 0 auto;}
+    .team .company {width: 100%;}
+}
+
+@media screen and (max-width:950px) {
+    .info {top: 50%;width: auto;height: auto;}
+    .info .title {font-size: 20px;margin-bottom: 10px;}
+    .logo-pic {display: none;}
+}
+
 /* 移动 */
 @media screen and (max-width:767px) {
     .info {background:rgba(156,29,34,0.5);width: 100%;color:#fff;}
@@ -127,7 +159,7 @@
     .joinus .job-off {height: 40px;overflow: hidden;}
     .joinus .job-inner  {margin-bottom: 100px;}
 
-    .team .logo-box {width: 140px;}
+    .team .logo-box {width: 100%;}
     .team .company .job {margin-top: 10px;font-size: 16px;} 
     .team .company-info {text-align: center;}
     .team .company-desc {line-height: 1.4;}

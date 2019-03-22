@@ -1,6 +1,6 @@
 .more-btn {width: 130px;height: 40px;text-align: center;font-size: 12px;background: #9c1d22;margin-top: 120px;}
 .more-btn a{color:#fff;line-height: 40px;display: block;}
-.more-btn img{margin-left: 15px;position: relative;top: 2px;}
+.more-btn img{margin-left: 15px;}
 .gary {background: #f7f7f7;}
 
 body,html {background: #fff;}
@@ -61,6 +61,45 @@ body,html {background: #fff;}
     .pic-show .pic-inner img{vertical-align: middle;padding-top: 20%;}
     .pic-show .all-width {width: 100%;}
     .pic-show .all-width img{padding-top: 10%;}
+
+    .form-box {margin:60px 0;}
+    .form-box .form {width: 1000px;margin: 0 auto;background: #f4f4f4;padding: 30px;}
+    .form-box .book-title {font-size: 24px;text-align: center;margin-bottom: 60px;}
+    .form-box .form-title {font-size: 20px;color: #19234f;margin-bottom: 60px;}
+    .form-box .input-list {margin:10px 0 30px 0;width: 50%;float: left;height: 50px;}
+    .form-box .p1 {padding-bottom: 10px;}
+    .form-box .input {font-size: 14px;background: #fff;border-radius: 5px;border: 0;height: 35px;padding-left: 15px;line-height: 35px;
+    transition:all ease .5s;width: 80%;}
+    .form-box .sex {margin-top: 12px;}
+    .form-box input:focus {
+        border-color: #66afe9;
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+    }
+    .form-box .book-btn {background: #ab1a1b;color: #fff;line-height: 100%;height: 40px;width: 130px;font-size: 16px;
+    line-height: 40px;margin:30px auto 0;text-align: center;}
+    .form-box .sex-list {margin-right: 10px;cursor: pointer;}
+}
+
+@media screen and (max-width:1400px) {
+    .bottom {width: 90%;margin:0 auto;}
+    .menu-con {width: 90%;margin:0 auto;}
+    .menu-list {width: 23%;margin:0 1%;}
+    
+    .info-con .decorate {display: none;}
+    .info {width: auto;height: auto;}
+    .menu-box a{margin-right: 15px;}
+    .down-btn {display: none;}
+}
+
+@media screen and (max-width:1000px) {
+    .bottom {width: auto;margin:0 auto;}
+    .info-con .decorate {display: none;}
+    .info {width: auto;height: auto;}
+    .menu-box a{margin-right: 15px;}
+    .down-btn {display: none;}
+    .form-box .form {width: 90%;margin:0 auto;}
 }
 
 /* 移动 */
@@ -69,17 +108,27 @@ body,html {background: #fff;}
     .mobile {display: block;}
 
     /* 移动端顶部菜单 */
-    .mobile-nav {height: 55px;background: #9c1d22;}
+    .mobile-top {position: fixed;z-index:1000;top: 0;left: 0;width: 100%;height: 55px;}
+    .mobile-nav {height: 55px;background: #9c1d22;position: relative;z-index:100;}
     .white-logo {width: 220px;margin:7px 0 0 10px;}
     .switch {margin:22px 10px 0 0;}
     .switch img {width: 20px;}
-    .nav-body {background: #fff;position: fixed;top: 55px;right: 0;z-index:1000;width: 100%;padding-bottom: 20px;transition:all ease .5s;
-    transform:translateX(0);}
-    .nav-off {transform:translateX(100%);}
-    .nav-inner {padding:0 20px;}
-    .nav-list {width: 100%;padding: 8px 0px;font-size: 14px;}
+    .nav-body {width: 100vw;transition:all ease .5s;background: #fff;z-index:50;height: 100vh;overflow: hidden;
+    transform:translateY(0);position: relative;}
+    .nav-off {transform:translateY(-100vh);}
+    .nav-inner {width: 100%;background: #fff;}
+    .first-box {transition:all ease .5s;transform:translateX(0);}
+    .first-off {transform:translateX(-100vw);}
+    .nav-list {font-size: 14px;height: 54px;line-height: 54px;border-bottom:1px solid #ebebeb;padding:0 15px;}
+    .nav-list .arrow2 {width: 8px;margin-top: 20px;}
     .next-con {margin-top: 8px;}
-    .next-list {width: 100%;padding: 8px 0 0 0;font-size: 12px;}
+    .next-list {width: 100%;font-size: 12px;}
+    .second-box {transition:all ease .5s;z-index:500;position: absolute;left: 0;top: 0;}
+    .second-off {left: 100vw;}
+    .second-box .second-title {background: #f0f0f0;border-bottom: 1px solid #e8e8e8;height: 44px;line-height: 44px;
+    padding:0 15px;}
+    .second-box .back {transform: rotate(180deg);margin:15px 0 0 0;}
+    .second-box .title {margin-left: 50%;text-indent: -2em;}
 
     /* 全局底部移动 */
     .bottom {background: #303030;padding:15px;}
@@ -111,4 +160,24 @@ body,html {background: #fff;}
     .pic-show {position: fixed;top: 0;left: 0;width: 100%;height: 100%;z-index:1000;text-align: center;}
     .pic-show .mask {background: rgba(0,0,0,0.5);width: 100%;height: 100%;}
     .pic-show .pic-inner {display: flex;justify-content: center;align-items: center;height: 100%;}
+
+    .wrap {margin-top: 55px;}
+    .form-box {margin:30px 0;}
+    .form-box .form {padding:20px 10px;margin:0 auto;background: #f4f4f4;}
+    .form-box .book-title {font-size: 18px;text-align: center;margin-bottom:30px;}
+    .form-box .form-title {font-size: 16px;color: #19234f;margin-bottom: 30px;}
+    .form-box .input-list {margin:10px 0 50px 0;width: 100%;height: 40px;}
+    .form-box .p1 {padding-bottom: 10px;}
+    .form-box .input {font-size: 12px;background: #fff;border-radius: 5px;border: 0;height: 35px;padding-left: 15px;line-height: 35px;
+    transition:all ease .5s;width:96%;}
+    .form-box .sex {margin-top: 12px;}
+    .form-box input:focus {
+        border-color: #66afe9;
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+    }
+    .form-box .book-btn {background: #ab1a1b;color: #fff;line-height: 100%;height: 30px;width: 120px;font-size: 14px;
+    line-height: 30px;margin:20px auto 0;text-align: center;}
+    .form-box .sex-list {margin-right: 10px;cursor: pointer;}
 }

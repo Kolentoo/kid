@@ -35,6 +35,39 @@
 
 }
 
+@media screen and (max-width:1400px) {
+    .nav-wrap .nav-inner {padding:0 20px;width: auto;}
+    .info {top: 50%;width: auto;height: auto;}
+    .info .title {font-size: 20px;margin-bottom: 10px;}
+
+}
+
+
+@media screen and (max-width:1200px) {
+
+    .progress .section2 .pic-box {width: 100%;}
+    .progress .section3 .cont-box {width: 90%;margin:0 auto;}
+    .progress .section3 .detail {width: 60%;}
+    .progress .section3 .cont-con .pic {width: 35%;}
+
+    .progress .question-con {width: 90%;margin:40px auto 0;}
+}
+
+@media screen and (max-width:1000px) {
+    .progress .apply-box {width: 90%;margin:0 auto;}
+}
+
+@media screen and (max-width:950px) {
+    .info {top: 50%;width: auto;height: auto;}
+    .info .title {font-size: 20px;margin-bottom: 10px;}
+    .logo-pic {display: none;}
+
+    .progress .decorate {display: none;}
+    .progress .form {width: 100%;}
+
+
+}
+
 /* 移动 */
 @media screen and (max-width:767px) {
     .progress .section2 {padding:30px 0;}
@@ -65,5 +98,7 @@
     .progress .form .apply-btn {width: 195px;height: 40px;line-height: 40px;text-align: center;color:#fff;
     background: #851014;margin:20px auto 0 ;}
 
+    .progress .section3 .detail {width: auto;}
+    .progress .section3 .cont-con .pic {width: auto;}
     
 }

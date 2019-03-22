@@ -39,7 +39,7 @@
     .lesson .section6 .cont-box ul{width: 1350px;margin:50px auto 0;}
     .lesson .section6 .cont-list {float: left;width: 300px;height: 300px;border-radius: 50%;text-align: center;font-size: 24px;color:#fff;
     margin:0 75px;}
-    .lesson .section6 .cont-list .p1 {padding-top: 110px;}
+    
     .lesson .section6 .cont-list .p2 {margin-top: 10px;}
     .lesson .section6 .clist1 {background: #8ac46d;}
     .lesson .section6 .clist2 {background: #35a9df;}
@@ -53,6 +53,53 @@
     .lessoninfo .section2 .course-list .detail .name {font-size: 18px;margin-top: 15px;margin-bottom: 20px;width: 100%;}
     .lessoninfo .section2 .course-list .detail .desc {font-size: 14px;color:#606060;height: 52px;overflow: hidden;margin-bottom: 25px;
     line-height: 1.3;}
+
+}
+
+@media screen and (max-width:1400px) {
+    .nav-wrap .nav-inner {padding:0 20px;width: auto;}
+    .info {top: 50%;width: auto;height: auto;}
+    .info .title {font-size: 20px;margin-bottom: 10px;}
+
+    .lesson .section6 .cont-list .p1 {padding-top: 110px;}
+}
+
+
+
+@media screen and (max-width:1360px) {
+    .lesson .section4 .pic-box {width: 100%;}
+
+    .lesson .section6 .cont-box ul {width: 90%;}
+    .lesson .section6 .cont-box ul {width: 1200px;margin:50px auto 0;}
+    .lesson .section6 .cont-list {width: 200px;height: 200px;margin:0 100px;}
+    .lesson .section6 .cont-list .p1 {padding-top: 60px;}
+}
+
+@media screen and (max-width:1200px) {
+    .lesson .section2 .cont-box {width: 90%;margin:0 auto;}
+    .lesson .lesson-pic1 {display: none;}
+
+    .lesson .section3 .cont-box {width: 90%;margin:0 auto;}
+    .lesson .section3 .example {width: 40%;}
+    .lesson .section3 .txt {width: 55%;}
+
+
+    .lesson .section6 .cont-box ul {width: 900px;margin:50px auto 0;}
+    .lesson .section6 .cont-list {width: 200px;height: 200px;margin:0 50px;}
+    .lesson .section6 .cont-list .p1 {padding-top: 60px;}
+
+}
+
+@media screen and (max-width:950px) {
+    .info {top: 50%;width: auto;height: auto;}
+    .info .title {font-size: 20px;margin-bottom: 10px;}
+    .logo-pic {display: none;}
+    .lesson .section3 .txt {margin-top: 30px;}
+    .lesson .section3 .example {display: none;}
+
+    .lesson .section6 .cont-box ul {width: 750px;margin:50px auto 0;}
+    .lesson .section6 .cont-list {width: 200px;height: 200px;margin:0 25px;}
+    .lesson .section6 .cont-list .p1 {padding-top: 60px;}
 
 }
 
