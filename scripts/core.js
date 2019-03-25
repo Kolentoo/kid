@@ -352,7 +352,9 @@ function initialize() {
     if($('.allmap').get(0)){
         var map = new AMap.Map('container', {
             resizeEnable: true, //是否监控地图容器尺寸变化
-            zoom:11, //初始化地图层级
+            zoom:13, //初始化地图层级
+            scrollWheel:false,
+            resizeEnable: true,
             center: [114.403678,30.475996] //初始化地图中心点
         });
 
@@ -363,6 +365,16 @@ function initialize() {
         
         // 将创建的点标记添加到已有的地图实例：
         map.add(marker);
+
+        AMap.plugin([
+            'AMap.ToolBar',
+        ], function(){
+            // 在图面添加工具条控件，工具条控件集成了缩放、平移、定位等功能按钮在内的组合控件
+            map.addControl(new AMap.ToolBar({
+                // 简易缩放模式，默认为 false
+                liteStyle: true
+            }));
+        });
     }
 }
 
