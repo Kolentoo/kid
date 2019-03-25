@@ -174,132 +174,131 @@ function controlBread(){
 
 function navTop(){
     if($('.nav-wrap').get(0)){
-        $('.nav-wrap').append(`
-            <div class="nav-inner clearfix">
-                <div class="logo">
-                    <img class="logo-pic vm" src="./images/whitelogo.png" alt="">
-                </div>
-                <div class="cd-group">
-                    <ul class="cd-con clearfix">
-                        <li class="cd-list"><a href="">关于我们</a></li>
-                        <li class="cd-list"><a href="">校园环境</a></li>
-                        <li class="cd-list"><a href="">品质服务</a></li>
-                        <li class="cd-list"><a href="">教学体系</a></li>
-                        <li class="cd-list"><a href="">新闻活动</a></li>
-                        <li class="cd-list"><a href="">入学流程</a></li>
-                        <li class="cd-list"><a href="">联系我们</a></li>
-                        <li class="cd-list pointer"><a >EN</a></li>
-                    </ul>
-                </div>
-            </div>
-        `)
+        $('.nav-wrap').append(
+            '<div class="nav-inner clearfix">'+
+                '<div class="logo">'+
+                   '<img class="logo-pic vm" src="./images/whitelogo.png" alt="">'+
+                '</div>'+
+                '<div class="cd-group">'+
+                    '<ul class="cd-con clearfix">'+
+                        '<li class="cd-list"><a href="">关于我们</a></li>'+
+                        '<li class="cd-list"><a href="">校园环境</a></li>'+
+                        '<li class="cd-list"><a href="">品质服务</a></li>'+
+                        '<li class="cd-list"><a href="">教学体系</a></li>'+
+                        '<li class="cd-list"><a href="">新闻活动</a></li>'+
+                        '<li class="cd-list"><a href="">入学流程</a></li>'+
+                        '<li class="cd-list"><a href="">联系我们</a></li>'+
+                        '<li class="cd-list pointer"><a >EN</a></li>'+
+                    '</ul>'+
+                '</div>'+
+            '</div>'
+        )
     }
 }
 
 function mobileNav(){
     if($('.mobile-top').get(0)){
         $('.mobile-top').append(
-            `
-            <div class="mobile-nav mobile">
-            <div class="nav-top clearfix">
-                <img class="white-logo fl lazy" src="./images/whitelogo.png" alt="">
-                <div class="switch fr">
-                    <img id="icon-menu" class="icon-menu lazy" src="./images/menu.png" alt="">
-                    <img class="icon-close hide lazy" src="./images/close.png" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="nav-body mobile nav-off">
-            <ul class="first-box nav-inner">
-                <li class="nav-list"><a class="clearfix block" href="">
-                    <span class="s1 fl">首页</span>
-                    <img class="vm arrow2 fr" src="./images/arrow2.png" alt="">
-                </a></li>
-                <li class="nav-list nolink aboutus"><a class="clearfix block" >
-                    <span class="s1 fl">关于我们</span>
-                    <img class="vm arrow2 fr" src="./images/arrow2.png" alt="">
-                </a></li>
-                <li class="nav-list enviroment nolink"><a class="clearfix block">
-                    <span class="s1 fl">校园环境</span>
-                    <img class="vm arrow2 fr" src="./images/arrow2.png" alt="">
-                </a></li>
-                <li class="nav-list"><a class="clearfix block" href="">
-                    <span class="s1 fl">品质服务</span>
-                    <img class="vm arrow2 fr" src="./images/arrow2.png" alt="">
-                </a></li>
-                <li class="nav-list lesson onlink"><a class="clearfix block">
-                    <span class="s1 fl">教学体系</span>
-                    <img class="vm arrow2 fr" src="./images/arrow2.png" alt="">
-                </a></li>
-                <li class="nav-list news nolink"><a class="clearfix block">
-                    <span class="s1 fl">新闻活动</span>
-                    <img class="vm arrow2 fr" src="./images/arrow2.png" alt="">
-                </a></li>
-                <li class="nav-list"><a class="clearfix block" href="">
-                    <span class="s1 fl">入学流程</span>
-                    <img class="vm arrow2 fr" src="./images/arrow2.png" alt="">
-                </a></li>
-                <li class="nav-list"><a class="clearfix block" href="">
-                    <span class="s1 fl">联系我们</span>
-                    <img class="vm arrow2 fr" src="./images/arrow2.png" alt="">
-                </a></li>
-            </ul>
-            <div class="second-box nav-inner second-off">
-                <div class="second-title">
-                    <img class="vm arrow2 fl back" src="./images/arrow2.png" alt="">
-                    <p class="title">关于我们</p>
-                </div>
-                <div class="nav-second">
-                    <div class="second-con hide">
-                        <li class="nav-list"><a class="clearfix block" href="">
-                            <span class="s1 fl">关于我们</span>
-                            <img class="vm arrow2 fr" src="./images/arrow2.png" alt="">
-                        </a></li>
-                        <li class="nav-list"><a class="clearfix block" href="">
-                            <span class="s1 fl">合作伙伴</span>
-                            <img class="vm arrow2 fr" src="./images/arrow2.png" alt="">
-                        </a></li>
-                        <li class="nav-list"><a class="clearfix block" href="">
-                            <span class="s1 fl">集团介绍</span>
-                            <img class="vm arrow2 fr" src="./images/arrow2.png" alt="">
-                        </a></li>
-                        <li class="nav-list"><a class="clearfix block" href="">
-                            <span class="s1 fl">加入我们</span>
-                            <img class="vm arrow2 fr" src="./images/arrow2.png" alt="">
-                        </a></li>
-                        <li class="nav-list"><a class="clearfix block" href="">
-                            <span class="s1 fl">教研团队</span>
-                            <img class="vm arrow2 fr" src="./images/arrow2.png" alt="">
-                        </a></li>
-                        <li class="nav-list"><a class="clearfix block" href="">
-                            <span class="s1 fl">幼儿园</span>
-                            <img class="vm arrow2 fr" src="./images/arrow2.png" alt="">
-                        </a></li>
-                    </div>
-                    <div class="second-con hide">
-                        <li class="nav-list"><a class="clearfix block" href="">
-                            <span class="s1 fl">校园环境</span>
-                            <img class="vm arrow2 fr" src="./images/arrow2.png" alt="">
-                        </a></li>
-                        <li class="nav-list"><a class="clearfix block" href="">
-                            <span class="s1 fl">校园简介</span>
-                            <img class="vm arrow2 fr" src="./images/arrow2.png" alt="">
-                        </a></li>
-                    </div>
-                    <div class="second-con hide">
-                        <li class="nav-list"><a class="clearfix block" href="">
-                            <span class="s1 fl">精彩活动</span>
-                            <img class="vm arrow2 fr" src="./images/arrow2.png" alt="">
-                        </a></li>
-                        <li class="nav-list"><a class="clearfix block" href="">
-                            <span class="s1 fl">新闻中心</span>
-                            <img class="vm arrow2 fr" src="./images/arrow2.png" alt="">
-                        </a></li>
-                    </div>
-                </div>
-            </div>
-        </div>
-            `
+
+            '<div class="mobile-nav mobile">'+
+            '<div class="nav-top clearfix">'+
+                '<img class="white-logo fl lazy" src="./images/whitelogo.png" alt="">'+
+                '<div class="switch fr">'+
+                    '<img id="icon-menu" class="icon-menu lazy" src="./images/menu.png" alt="">'+
+                    '<img class="icon-close hide lazy" src="./images/close.png" alt="">'+
+                '</div>'+
+            '</div>'+
+        '</div>'+
+        '<div class="nav-body mobile nav-off">'+
+            '<ul class="first-box nav-inner">'+
+                '<li class="nav-list"><a class="clearfix block" href="">'+
+                    '<span class="s1 fl">首页</span>'+
+                    '<img class="vm arrow2 fr" src="./images/arrow2.png" alt="">'+
+                '</a></li>'+
+                '<li class="nav-list nolink aboutus"><a class="clearfix block" >'+
+                    '<span class="s1 fl">关于我们</span>'+
+                    '<img class="vm arrow2 fr" src="./images/arrow2.png" alt="">'+
+                '</a></li>'+
+                '<li class="nav-list enviroment nolink"><a class="clearfix block">'+
+                    '<span class="s1 fl">校园环境</span>'+
+                    '<img class="vm arrow2 fr" src="./images/arrow2.png" alt="">'+
+                '</a></li>'+
+                '<li class="nav-list"><a class="clearfix block" href="">'+
+                    '<span class="s1 fl">品质服务</span>'+
+                    '<img class="vm arrow2 fr" src="./images/arrow2.png" alt="">'+
+                '</a></li>'+
+                '<li class="nav-list lesson onlink"><a class="clearfix block">'+
+                    '<span class="s1 fl">教学体系</span>'+
+                    '<img class="vm arrow2 fr" src="./images/arrow2.png" alt="">'+
+                '</a></li>'+
+               '<li class="nav-list news nolink"><a class="clearfix block">'+
+                    '<span class="s1 fl">新闻活动</span>'+
+                    '<img class="vm arrow2 fr" src="./images/arrow2.png" alt="">'+
+                '</a></li>'+
+                '<li class="nav-list"><a class="clearfix block" href="">'+
+                    '<span class="s1 fl">入学流程</span>'+
+                    '<img class="vm arrow2 fr" src="./images/arrow2.png" alt="">'+
+                '</a></li>'+
+                '<li class="nav-list"><a class="clearfix block" href="">'+
+                    '<span class="s1 fl">联系我们</span>'+
+                    '<img class="vm arrow2 fr" src="./images/arrow2.png" alt="">'+
+                '</a></li>'+
+            '</ul>'+
+            '<div class="second-box nav-inner second-off">'+
+                '<div class="second-title">'+
+                    '<img class="vm arrow2 fl back" src="./images/arrow2.png" alt="">'+
+                    '<p class="title">关于我们</p>'+
+                '</div>'+
+                '<div class="nav-second">'+
+                    '<div class="second-con hide">'+
+                        '<li class="nav-list"><a class="clearfix block" href="">'+
+                            '<span class="s1 fl">关于我们</span>'+
+                            '<img class="vm arrow2 fr" src="./images/arrow2.png" alt="">'+
+                        '</a></li>'+
+                        '<li class="nav-list"><a class="clearfix block" href="">'+
+                            '<span class="s1 fl">合作伙伴</span>'+
+                            '<img class="vm arrow2 fr" src="./images/arrow2.png" alt="">'+
+                        '</a></li>'+
+                       '<li class="nav-list"><a class="clearfix block" href="">'+
+                            '<span class="s1 fl">集团介绍</span>'+
+                            '<img class="vm arrow2 fr" src="./images/arrow2.png" alt="">'+
+                        '</a></li>'+
+                        '<li class="nav-list"><a class="clearfix block" href="">'+
+                            '<span class="s1 fl">加入我们</span>'+
+                            '<img class="vm arrow2 fr" src="./images/arrow2.png" alt="">'+
+                        '</a></li>'+
+                        '<li class="nav-list"><a class="clearfix block" href="">'+
+                            '<span class="s1 fl">教研团队</span>'+
+                            '<img class="vm arrow2 fr" src="./images/arrow2.png" alt="">'+
+                        '</a></li>'+
+                        '<li class="nav-list"><a class="clearfix block" href="">'+
+                            '<span class="s1 fl">幼儿园</span>'+
+                            '<img class="vm arrow2 fr" src="./images/arrow2.png" alt="">'+
+                        '</a></li>'+
+                    '</div>'+
+                    '<div class="second-con hide">'+
+                        '<li class="nav-list"><a class="clearfix block" href="">'+
+                            '<span class="s1 fl">校园环境</span>'+
+                            '<img class="vm arrow2 fr" src="./images/arrow2.png" alt="">'+
+                        '</a></li>'+
+                        '<li class="nav-list"><a class="clearfix block" href="">'+
+                            '<span class="s1 fl">校园简介</span>'+
+                            '<img class="vm arrow2 fr" src="./images/arrow2.png" alt="">'+
+                        '</a></li>'+
+                    '</div>'+
+                    '<div class="second-con hide">'+
+                        '<li class="nav-list"><a class="clearfix block" href="">'+
+                            '<span class="s1 fl">精彩活动</span>'+
+                            '<img class="vm arrow2 fr" src="./images/arrow2.png" alt="">'+
+                        '</a></li>'+
+                        '<li class="nav-list"><a class="clearfix block" href="">'+
+                            '<span class="s1 fl">新闻中心</span>'+
+                            '<img class="vm arrow2 fr" src="./images/arrow2.png" alt="">'+
+                        '</a></li>'+
+                    '</div>'+
+                '</div>'+
+            '</div>'+
+        '</div>'
         )
     }
 }
@@ -313,38 +312,37 @@ function jobShow(){
 function allIcon(){
     if($('.menu-group').get(0)){
         $('.menu-group').append(
-            `
-            <ul class="menu-con clearfix">
-            <li class="menu-list fl">
-                <div class="icon-box tc">
-                    <img class="icon-menu" src="../images/icon-index1.png" alt="">
-                </div>
-                <p class="p1">预约参观</p>
-                <p class="p2 pc">带您了解幼儿园配套与师资</p>
-            </li>
-            <li class="menu-list fl">
-                <div class="icon-box tc">
-                    <img class="icon-menu" src="../images/icon-index2.png" alt="">
-                </div>
-                <p class="p1">入园流程</p>
-                <p class="p2 pc">入园准备、常见问题</p>
-            </li>
-            <li class="menu-list fl">
-                <div class="icon-box tc">
-                    <img class="icon-menu" src="../images/icon-index3.png" alt="">
-                </div>
-                <p class="p1">资料下载</p>
-                <p class="p2 pc">查看和下载幼儿园资料</p>
-            </li>
-            <li class="menu-list fl">
-                <div class="icon-box tc">
-                    <img class="icon-menu" src="../images/icon-index4.png" alt="">
-                </div>
-                <p class="p1">APP下载</p>
-                <p class="p2 pc">家校互动、学生服务</p>
-            </li>
-        </ul>
-            `
+            '<ul class="menu-con clearfix">'+
+            '<li class="menu-list fl">'+
+                '<div class="icon-box tc">'+
+                    '<img class="icon-menu" src="../images/icon-index1.png" alt="">'+
+                '</div>'+
+                '<p class="p1">预约参观</p>'+
+                '<p class="p2 pc">带您了解幼儿园配套与师资</p>'+
+            '</li>'+
+            '<li class="menu-list fl">'+
+                '<div class="icon-box tc">'+
+                    '<img class="icon-menu" src="../images/icon-index2.png" alt="">'+
+                '</div>'+
+                '<p class="p1">入园流程</p>'+
+                '<p class="p2 pc">入园准备、常见问题</p>'+
+           '</li>'+
+            '<li class="menu-list fl">'+
+                '<div class="icon-box tc">'+
+                    '<img class="icon-menu" src="../images/icon-index3.png" alt="">'+
+                '</div>'+
+                '<p class="p1">资料下载</p>'+
+                '<p class="p2 pc">查看和下载幼儿园资料</p>'+
+            '</li>'+
+            '<li class="menu-list fl">'+
+                '<div class="icon-box tc">'+
+                    '<img class="icon-menu" src="../images/icon-index4.png" alt="">'+
+                '</div>'+
+                '<p class="p1">APP下载</p>'+
+                '<p class="p2 pc">家校互动、学生服务</p>'+
+            '</li>'+
+        '</ul>'
+
         )
     }
 }
