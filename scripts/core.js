@@ -355,16 +355,16 @@ function initialize() {
         var map = new AMap.Map('container', {
             resizeEnable: true, //是否监控地图容器尺寸变化
             zoom:11, //初始化地图层级
-            center: [116.397428, 39.90923] //初始化地图中心点
+            center: [114.403678,30.475996] //初始化地图中心点
         });
 
-        // var marker = new AMap.Marker({
-        //     position: new AMap.LngLat(116.39, 39.9),   // 经纬度对象，也可以是经纬度构成的一维数组[116.39, 39.9]
-        //     title: '北京'
-        // });
+        var marker = new AMap.Marker({
+            position: new AMap.LngLat(114.403678,30.475996),   // 经纬度对象，也可以是经纬度构成的一维数组[116.39, 39.9]
+            title: '武汉'
+        });
         
-        // // 将创建的点标记添加到已有的地图实例：
-        // map.add(marker);
+        // 将创建的点标记添加到已有的地图实例：
+        map.add(marker);
     }
 }
 
